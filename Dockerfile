@@ -1,4 +1,4 @@
-FROM golang:1.21.5 AS build
+FROM golang:1.22.5 AS build
 RUN git clone https://github.com/kgretzky/evilginx2 /app
 WORKDIR /app
 RUN go build -o evilginx2
